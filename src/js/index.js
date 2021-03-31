@@ -43,7 +43,7 @@ $(function () {
             counter = 0;
 
         $('#show-next-image, #show-previous-image')
-            .on('click',function () {
+            .on('click', function () {
                 if ($(this)
                     .attr('id') === 'show-previous-image') {
                     current_image--;
@@ -78,8 +78,12 @@ $(function () {
                 updateGallery($(this));
             });
     }
-
-
 });
+
 $('.year').html(new Date().getFullYear());
 
+// Add the following code if you want the name of the file appear on select
+$(".custom-file-input").on("change", function () {
+    var fileName = $(this).val().split("\\").pop();
+    $(this).siblings(".custom-file-label").addClass("selected").html(fileName);
+});

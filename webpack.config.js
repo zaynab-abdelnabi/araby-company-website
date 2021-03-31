@@ -28,7 +28,7 @@ module.exports = {
           {
             loader: MiniCssExtractPlugin.loader,
             options: {
-              publicPath : '../',
+              publicPath: '../',
             }
           },
           "css-loader",
@@ -87,7 +87,18 @@ module.exports = {
       template: './src/project-details.html',
       filename: 'project-details.html',
     }),
-
+    new HtmlWebpackPlugin({
+      template: './src/blog.html',
+      filename: 'blog.html',
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/blog-details.html',
+      filename: 'blog-details.html',
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/add-blog.html',
+      filename: 'add-blog.html',
+    }),
     new MiniCssExtractPlugin({ filename: 'css/style.css', }),
   ],
 };
