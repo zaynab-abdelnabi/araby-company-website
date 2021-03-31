@@ -60,28 +60,19 @@
     margin-left: 10px;
 }
 .facebook{
-    &:hover, &:focus{
-        background-color: #3b5998;
-        color: white;
-    }
+    @include social-btn-style(#3b5998);
 }
 .linkedin{
-    &:hover, &:focus{
-        background-color: #0077b5;
-        color: white;
-    }
+    @include social-btn-style(#0077b5);
 }
-
 .twitter{
-    &:hover, &:focus{
-        background-color: #00acee;
-        color: white;
-    }
+    @include social-btn-style(#00acee);
 }
 .add-new-blog{
     label{
         &:first-child{
             font-size: 14px;
+            border: none;
             font-weight: bold;
         }
     }

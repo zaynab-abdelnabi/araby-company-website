@@ -16,9 +16,6 @@ $(function () {
         }
     );
 
-
-
-
     let modalId = $('#image-gallery');
 
 

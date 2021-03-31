@@ -1,0 +1,7 @@
+@mixin social-btn-style($color) {
+    &:hover, &:focus{
+        background-color: $color;
+        border: none;
+        color: white;
+    }
+}

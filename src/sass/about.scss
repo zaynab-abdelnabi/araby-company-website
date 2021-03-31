@@ -1,0 +1,21 @@
+.banner-about{
+    #banner-img{
+        background-image: url('../images/banner-about.jpg');
+    }
+}
+.team{
+    .line3{
+        width: 50px;
+        background-color: $main-color;
+    }
+    .card-text{
+        font-size: 14px;
+        margin: 14px 0;
+        color: $custom-text-color;
+        font-weight: 600;
+    }
+}
+.social-icons-about{
+    margin-left: 18%;
+    
+}
