@@ -1,0 +1,12 @@
+.banner-contact{
+    #banner-img{
+        background-image: url(../images/banner-contact.jpg);
+    }
+}
+.contact-us{
+    .contact-info{
+        svg{
+            color: $main-color !important;
+        }
+    }
+}
