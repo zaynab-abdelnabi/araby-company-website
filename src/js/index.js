@@ -16,11 +16,18 @@ $(function () {
         }
     );
 
+    var pathname = window.location.pathname;
+    console.log(pathname);
+    $('.navbar-nav > li > a[href="' + pathname + '"]').parent().addClass('active');
+    if (pathname === '/add-blog.html' || pathname === '/blog-details.html') {
+        $('.navbar-nav > li > a[href="/blog.html"]').parent().addClass('active');
+    }
+    if (pathname === '/project-details.html') {
+        $('.navbar-nav > li > a[href="/projects.html"]').parent().addClass('active');
+    }
+
     let modalId = $('#image-gallery');
-
-
     loadGallery(true, 'a.thumbnail');
-
     //This function disables buttons when needed
     function disableButtons(counter_max, counter_current) {
         $('#show-previous-image, #show-next-image')
